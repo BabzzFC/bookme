@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: barber-booking-app
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: ADMIN_PASSWORD
+        value: Brianna0408
+    plan: free
